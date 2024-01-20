@@ -1,36 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.css';
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.css";
+import Header from "./components/Header/Header";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div className='container bg-dark'>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="container-fluid p-10 my-20 bg-red">
-        <button className=' bg-primary-subtle border border-primary-subtle' onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+function App(){
+  return(
+    <div className="app">
+    <Header />
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nesciunt.</p> <br /><br />
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, veniam!</p> <br /><br />
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus tempore possimus ea ab quis. Quas, et impedit. Ut, saepe.</p> <br /><br />
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi quaerat accusamus numquam ab nisi hic minus molestiae recusandae repellendus.</p> <br /><br />
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta corporis porro dignissimos, fugiat debitis necessitatibus laboriosam sit expedita cumque. Odio.</p> br
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod.</p> <br /><br />         
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nesciunt.</p> <br /><br />
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, veniam!</p> <br /><br />
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus tempore possimus ea ab quis. Quas, et impedit. Ut, saepe.</p> <br /><br />
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi quaerat accusamus numquam ab nisi hic minus molestiae recusandae repellendus.</p> <br /><br />
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta corporis porro dignissimos, fugiat debitis necessitatibus laboriosam sit expedita cumque. Odio.</p> br
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod.</p> <br /><br />         
+    </div>
+  );
 }
 
-export default App
+export default App;
