@@ -35,10 +35,10 @@
   
   @keyframes glowingEffect {
     from {
-      text-shadow: 0 0 10px rgba(127, 101, 231, 0.5), 0 0 20px rgba(127, 101, 231, 0.5), 0 0 30px rgba(127, 101, 231, 0.5);
+      text-shadow: 0 0 10px rgba(127, 101, 231, 0.502), 0 0 20px rgba(127, 101, 231, 0.5), 0 0 30px rgba(127, 101, 231, 0.5);
     }
     to {
-      text-shadow: 0 0 10px rgba(127, 101, 231, 1), 0 0 20px rgba(127, 101, 231, 1), 0 0 30px rgba(127, 101, 231, 1);
+      text-shadow: 0 0 10px #7f65e7, 0 0 20px rgba(127, 101, 231, 1), 0 0 30px rgba(127, 101, 231, 1);
     }
   }
 
@@ -49,6 +49,7 @@
 
 .navbar-icon:hover{
   font-size: 1.5rem;
+  color: rgba(127, 101, 231, 0.8);
 }
 
 .navbar-btn.btn-primary {
@@ -57,6 +58,8 @@
   color: rgba(127, 101, 231, 0.8) !important;
   border-radius: 10px;
   margin-right: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 0px 10px rgba(127, 101, 231, 0.3);
 }
 
 .navbar-btn.btn-primary:hover,

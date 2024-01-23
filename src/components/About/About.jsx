@@ -1,6 +1,6 @@
 import React from "react";
 import './about.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, ProgressBar } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
 
 function About(){
@@ -23,12 +23,15 @@ function About(){
           </span>
         </div>
         <div id="subTitle">
-          I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results.
-        </div></Col>
+          I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results.With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
+        </div>
+        
+        </Col>
         <Col xs={5}>
           <div id="heroContainer">
             <img src="/logo-black.png" alt="hero image" id="img" />
           </div>
+          
         </Col>
       </Row>
     </Container>
