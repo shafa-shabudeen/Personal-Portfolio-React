@@ -35,10 +35,10 @@ function Header() {
               </Nav.Link>
             </Nav.Item>
               <Nav.Item className={`navbar-item ${activeLink === 'skills' ? 'navbar-item-active' : ''}`}>
-                <Nav.Link href="#" onClick={() => handleNavLinkClick('skills')}> Skills</Nav.Link>
+                <Nav.Link href="#skills" onClick={() => handleNavLinkClick('skills')}> Skills</Nav.Link>
               </Nav.Item>
               <Nav.Item className={`navbar-item ${activeLink === 'experience' ? 'navbar-item-active' : ''}`}>
-                <Nav.Link href="#"  onClick={() => handleNavLinkClick('experience')}>Experience</Nav.Link>
+                <Nav.Link href="#experience"  onClick={() => handleNavLinkClick('experience')}>Experience</Nav.Link>
               </Nav.Item>
               <Nav.Item className={`navbar-item ${activeLink === 'projects' ? 'navbar-item-active' : ''}`}>
                 <Nav.Link href="#"  onClick={() => handleNavLinkClick('projects')}>Projects</Nav.Link>
