@@ -7,6 +7,7 @@ import "./App.css";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects/Projects";
 
 
 
@@ -18,9 +19,9 @@ function App(){
     <About />
     <Skills />
     <Experience />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nesciunt.</p> <br /><br />
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, veniam!</p> <br /><br />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod.</p> <br /><br />         
+    <br />
+    <br />
+    <Projects />
     </div>
   );
 }
