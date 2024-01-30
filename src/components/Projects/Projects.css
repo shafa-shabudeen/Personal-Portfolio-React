@@ -25,14 +25,14 @@
 }
 
 #Title{
-    font-size: 42px;
+    /* font-size: 42px; */
 text-align: center;
 font-weight: 600;
 margin-top: 20px;
   color: #fff;
   @media (max-width: 768px) {
       margin-top: 12px;
-      font-size: 32px;
+      /* font-size: 32px; */
   }
 }
 
@@ -84,6 +84,7 @@ margin: 22px 0px;
 #Card{
     width: 330px;
     height: 490px;
+    margin-bottom: 30px;
     background-color: black;
     cursor: pointer;
     border-radius: 10px;
@@ -143,9 +144,9 @@ margin: 22px 0px;
     padding: 0px 2px;
 }
 
-#Title{
-    font-size: 20px;
-    font-weight: 600;
+#TagTitle{
+    font-size: 2px;
+    font-weight: 100;
     color: #fff;
     overflow: hidden;
     display: -webkit-box;

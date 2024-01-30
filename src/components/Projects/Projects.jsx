@@ -187,7 +187,7 @@ function Projects(){
                   ))}
               </div>
               <div id="Details">
-                  <div id="Title">{project.title}</div>
+                  <div id="TagTitle">{project.title}</div>
                   <div id="Date">{project.date}</div>
                   <div id="Description">{project.description}</div>
               </div>
