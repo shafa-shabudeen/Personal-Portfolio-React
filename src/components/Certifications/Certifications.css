@@ -1,39 +1,30 @@
-#Certifications{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    align-items: center;
-    padding: 0px 0px 60px 0px;
-    @media (max-width: 960px) {
-        padding: 0px;
-    }
-}
-
-#Wrapper{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1350px;
-    padding: 40px 0px 0px 0px;
-    gap: 12px;
-    @media (max-width: 960px) {
-        flex-direction: column;
-    }
-}
-
-#Title{
-    font-size: 42px;
+#subtitle{
+  font-size: 42px;
 text-align: center;
 font-weight: 600;
-margin-top: 20px;
-  color: #fff;
-  @media (max-width: 768px) {
-      margin-top: 12px;
-      font-size: 32px;
-  }
+margin-top: 40px;
+color: #fff;
+@media (max-width: 768px) {
+margin-top: 12px;
+    font-size: 32px;
 }
+}
+
+.cert-carousel {
+  width: 700px;
+  margin: auto;
+  height: 500px;
+  margin-block-start: 30px;
+}
+
+.cert-image-container {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-size: contain; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+}
+

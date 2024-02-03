@@ -44,7 +44,7 @@ function Header() {
                 <Nav.Link href="#projects"  onClick={() => handleNavLinkClick('projects')}>Projects</Nav.Link>
               </Nav.Item>
               <Nav.Item className={`navbar-item ${activeLink === 'certifications' ? 'navbar-item-active' : ''}`}>
-                <Nav.Link href="#"  onClick={() => handleNavLinkClick('certifications')}>Certifications</Nav.Link>
+                <Nav.Link href="#certifications"  onClick={() => handleNavLinkClick('certifications')}>Certifications</Nav.Link>
               </Nav.Item>
             </Nav>
             <Nav className="navbar-text">

@@ -6,6 +6,7 @@
     position: relative;
     z-index: 1;
     align-items: center;
+    margin-top: 30px;
     clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
 }
 
@@ -84,8 +85,8 @@ margin: 22px 0px;
 #Card{
     width: 330px;
     height: 490px;
-    margin-bottom: 30px;
     background-color: black;
+    /* margin-bottom: 30px; */
     cursor: pointer;
     border-radius: 10px;
     border: 1px solid rgba(127, 101, 231, 0.8);
@@ -145,7 +146,7 @@ margin: 22px 0px;
 }
 
 #TagTitle{
-    font-size: 2px;
+    font-size: 25px;
     font-weight: 100;
     color: #fff;
     overflow: hidden;
