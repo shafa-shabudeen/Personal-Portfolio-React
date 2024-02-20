@@ -13,7 +13,6 @@ import Footer from "./components/Footer/Footer";
 import ControlledExample from "./components/Certifications/Certifications";
 
 
-
 function App(){
 
   return(
@@ -27,6 +26,7 @@ function App(){
     <Projects />
     <ControlledExample />
     <Footer />
+   
     </div>
   );
 }

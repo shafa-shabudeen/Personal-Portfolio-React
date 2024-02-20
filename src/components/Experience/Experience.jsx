@@ -13,7 +13,7 @@ const experiences = [
     img: "techgen-logo.jpg",
     date: "08/2023-Present",
     endDate: "Present",
-    skills: ["Core Java", "Advance Java", "Frontend technologies"],
+    skills: ["Core Java", "Advance Java", "Java Server Pages","Java Swing","Java Database Connectivity"],
     description: [
       "Instructed Core and Advanced Java, achieving a 95% pass rate in both courses among a diverse student group of 20+ students",
       "Implemented interactive learning through practical sessions and hands-on exercises, resulting in a 15% increase in average project scores",
@@ -42,12 +42,11 @@ const experiences = [
     img: "Internpe-logo.jpg",
     date: "09/2023",
     endDate: "11/2023",
-    skills: ["Core Java", "Advance Java"],
+    skills: ["Basics of Java","OOPs"],
     description: [
-      "Integrated Trustly Payment Solution into an e-commerce app as part of an intern role, enhancing the payment experience",
-      "Used Java technologies like MongoDB and Spring Boot for integration, leading to a 30% increase in conversion rates and a 20% reduction in cart abandonment",
-      "Developed Trustly Payment integration using Java, MongoDB, and Spring Boot",
-      "Designed secure APIs for seamless communication",
+      "Acquired foundational understanding of Java syntax, data types, control structures, and basic input/output operations.",
+      "Demonstrated proficiency in creating and using classes, objects, methods, and constructors to encapsulate and organize code.",
+      "Applied fundamental Java concepts like inheritance, polymorphism, encapsulation, and abstraction to solve programming problems."
     ],
   },
 ];
