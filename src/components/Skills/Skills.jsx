@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import "./skills.css";
+import "./Skills.css";
 
 const skillsData = [
   { image: "Java.png", name: "Java" },

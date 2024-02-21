@@ -59,7 +59,7 @@ function About() {
           </Col>
           <Col xs={5}>
             <div id="heroContainer">
-              <img src="/profile.jpg" alt="hero image" id="img" />
+              <img src="./profile.jpg" alt="hero image" id="img" />
             </div>
           </Col>
         </Row>
