@@ -47,4 +47,4 @@ This is my personal portfolio website built using React with Vite and styled wit
 5. Open your browser and visit http://localhost:3000 to view the website.
 
 ## Live Website
-  Visit the live website: <a href=''>Personal Portfolio</a>
+  Visit the live website: <a href='https://shafa-shabudeen.github.io/Personal-Portfolio-React/'>Personal Portfolio</a>
