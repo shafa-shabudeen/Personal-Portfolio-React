@@ -25,20 +25,20 @@
     max-width: 1350px;
     padding: 10px 0px 100px 0;
     gap: 12px;
+
     @media (max-width: 960px) {
         flex-direction: column;
     }
 }
 
 #Title{
-    /* font-size: 42px; */
 text-align: center;
 font-weight: 600;
 margin-top: 20px;
   color: #fff;
+  
   @media (max-width: 768px) {
       margin-top: 12px;
-      /* font-size: 32px; */
   }
 }
 

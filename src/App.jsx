@@ -21,8 +21,6 @@ function App(){
     <About />
     <Skills />
     <Experience />
-    {/* <br />
-    <br /> */}
     <Projects />
     <ControlledExample />
     <Footer />

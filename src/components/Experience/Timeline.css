@@ -28,3 +28,9 @@
   margin-top: 20px;
   box-shadow: 0 0 19px rgba(127, 101, 231, 0.8); /* Add glowing effect */
 }
+
+@media (max-width: 768px) {
+  .timeline-item {
+    display: none;
+  }
+}

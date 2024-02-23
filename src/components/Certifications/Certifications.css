@@ -1,34 +1,38 @@
-#subtitle{
+#subtitle {
   font-size: 42px;
-text-align: center;
-font-weight: 600;
-margin-top: 40px;
-color: #fff;
-@media (max-width: 768px) {
-margin-top: 12px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 40px;
+  color: #fff;
+
+  @media (max-width: 768px) {
+    margin-top: 12px;
     font-size: 32px;
-}
+  }
 }
 
 .cert-carousel {
-  width: 700px;
+  width: 90%;
   margin: auto;
-  height: 500px;
+  height: 60%;
   margin-block-start: 30px;
+
+  @media (max-width: 768px) {
+    height: 70%;
+    margin-bottom: 20px;
+  }
 }
 
 .cert-image-container {
-  margin-top: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 300px;
-  background-size: contain; /* Adjust as needed */
-  background-position: center; /* Adjust as needed */
-  background-repeat: no-repeat; /* Adjust as needed */
-}
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
-/* #certifications{
-  background:  linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%); 
-} */
+  @media (max-width: 768px) {
+    height: 200px;
+  }
+}

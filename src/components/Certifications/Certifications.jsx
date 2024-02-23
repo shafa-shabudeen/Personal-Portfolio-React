@@ -55,14 +55,13 @@ function Certifications() {
   return (
     <Container id='certifications'>
       <h1 id='subtitle'>Certifications</h1>
-      <Carousel  style={{ width: '700px', margin: 'auto', height: '500px', marginBlockStart: '30px' }}>
+      <Carousel className='cert-carousel'>
         {certificateData.map((certificate, idx) => (
           <Carousel.Item key={idx}>
-             <div
+            <div
               className="cert-image-container"
               style={{ backgroundImage: `url(./${certificate.image})` }}
-            >
-            </div>
+            />
           </Carousel.Item>
         ))}
       </Carousel>

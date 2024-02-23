@@ -10,8 +10,8 @@ function About() {
   return (
     <div id="about">
       <Container>
-        <Row>
-          <Col>
+        <Row className="align-items-center">
+          <Col md={7} className="order-2 order-md-1">
             <div id="title">
               Hi, I am <br /> Shafa Shabudeen
             </div>
@@ -57,7 +57,7 @@ function About() {
               </a>
             </div>
           </Col>
-          <Col xs={5}>
+          <Col md={5} className="d-flex justify-content-md-end order-1 order-md-2 mt-md-0 mt-3">
             <div id="heroContainer">
               <img src="./profile.jpg" alt="hero image" id="img" />
             </div>
