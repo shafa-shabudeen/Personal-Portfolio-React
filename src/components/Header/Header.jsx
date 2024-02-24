@@ -57,7 +57,7 @@ function Header() {
               <Nav.Link href="mailto:shafashabbu@gmail.com">
                 <FontAwesomeIcon icon={faEnvelope} className="navbar-icon" />
               </Nav.Link>
-              <Nav.Link href="/Shafa Shabudeen Java Resume.pdf" download className="btn btn-primary navbar-btn">
+              <Nav.Link href="https://drive.google.com/file/d/1Rod23aM2vgx4QZ6PrDb9KJteMtHe3SA_/view?usp=sharing" download className="btn btn-primary navbar-btn" target="_blank">
                 Resume
               </Nav.Link>
           </Nav>
