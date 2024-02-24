@@ -30,7 +30,7 @@ This is my personal portfolio website built using React with Vite and styled wit
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/shafa-shabudeen/Personal-Portfolio-React.git
 
 2. Navigate to the project directory:
    ```bash
@@ -47,4 +47,4 @@ This is my personal portfolio website built using React with Vite and styled wit
 5. Open your browser and visit http://localhost:3000 to view the website.
 
 ## Live Website
-  Visit the live website: <a href=''>Personal Portfolio</a>
+  Visit the live website: <a href='https://shafa-shabudeen.github.io/Personal-Portfolio-React/'>Personal Portfolio</a>
