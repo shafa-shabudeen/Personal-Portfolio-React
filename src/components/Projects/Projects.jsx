@@ -174,7 +174,7 @@ function Projects() {
             {projects
               .filter((item) => item.category == toggle)
               .map((project) => (
-                <Button onClick={() => setOpenModal({ state: true })} id="Card">
+                <Button onClick={() => handleOpenModal(project)} id="Card">
                   <img id="Image" src={project.image} />
                   <div id="Tags">
                     {project.tags?.map((tag, index) => (
