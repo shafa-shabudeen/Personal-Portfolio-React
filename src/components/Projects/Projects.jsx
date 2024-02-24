@@ -1,5 +1,5 @@
 import "./Projects.css";
-import { Button, Container } from "react-bootstrap";
+import { Button, Container, Modal } from "react-bootstrap";
 import { useState } from "react";
 
 function Projects() {
@@ -14,9 +14,8 @@ function Projects() {
         "https://github.com/shafa-shabudeen/Dashboard-App-Frontend/blob/main/dashboard-app-preview.png?raw=true",
 
       tags: ["React Js", "PostgressSQL", "Spring Boot", "Java"],
-      category: "web app",
+      category: "fullstack",
       github: "https://github.com/shafa-shabudeen/Dashboard-App-Frontend",
-      webapp: "https://decisionhub.netlify.app/",
     },
     {
       id: 2,
@@ -27,9 +26,8 @@ function Projects() {
       image:
         "https://github.com/shafa-shabudeen/MovieFrontEnd/blob/main/app-preview.png?raw=true",
       tags: ["React Js", "MongoDB", "Spring Boot", "Java"],
-      category: "web app",
+      category: "fullstack",
       github: "https://github.com/shafa-shabudeen/MovieFrontEnd",
-      webapp: "https://trackify-management.netlify.app/",
     },
     {
       id: 3,
@@ -42,11 +40,37 @@ function Projects() {
       tags: ["HTML", "Css", "JavaScript"],
       category: "frontend",
       github: "https://github.com/shafa-shabudeen/TODO-List-web",
-      webapp: "https://podstream.netlify.app/",
+      webapp: "https://shafa-shabudeen.github.io/TODO-List-web/",
+    },
+    {
+      id: 4,
+      title: "Personal Portfolio",
+      date: "Mar 2023 - Mar 2023",
+      description:
+        "My personal portfolio website is a showcase of my skills, projects, and experiences in web development. Designed and developed entirely using HTML, CSS, and JavaScript, this responsive website serves as a digital resume and portfolio to highlight my expertise and accomplishments in the field of web development.",
+      image:
+        "https://github.com/shafa-shabudeen/shafaShabbu.com/blob/main/preview-image.png?raw=true",
+      tags: ["HTML", "Css", "JavaScript"],
+      category: "frontend",
+      github: "https://github.com/shafa-shabudeen/shafaShabbu.com",
+      webapp: "https://shafa-shabudeen.github.io/shafaShabbu.com/",
     },
   ];
 
   const [toggle, setToggle] = useState("all");
+
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleOpenModal = (project) => {
+    setSelectedProject(project);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+    setShowModal(false);
+  };
 
   return (
     <div className="projects">
@@ -73,22 +97,22 @@ function Projects() {
               </Button>
             )}
             <div className="vr" />
-            {toggle === "web app" ? (
+            {toggle === "fullstack" ? (
               <Button
                 active
-                value="web app"
-                onClick={() => setToggle("web app")}
+                value="fullstack"
+                onClick={() => setToggle("fullstack")}
                 id="ToogleButton"
               >
-                WEB APP'S
+                FULLSTACK'S
               </Button>
             ) : (
               <Button
-                value="web app"
-                onClick={() => setToggle("web app")}
+                value="fullstack"
+                onClick={() => setToggle("fullstack")}
                 id="ToogleButton"
               >
-                WEB APP'S
+                FULLSTACK'S
               </Button>
             )}
             <div className="vr" />
@@ -110,7 +134,7 @@ function Projects() {
                 FRONTEND'S
               </Button>
             )}
-            <div className="vr" />
+            {/* <div className="vr" />
             {toggle === "backend" ? (
               <Button
                 active
@@ -128,12 +152,12 @@ function Projects() {
               >
                 BACKEND'S
               </Button>
-            )}
+            )} */}
           </div>
           <div id="CardContainer">
             {toggle === "all" &&
               projects.map((project, index) => (
-                <Button onClick={() => setOpenModal({ state: true })} id="Card">
+                <Button onClick={() => handleOpenModal(project)} id="Card">
                   <img id="Image" src={project.image} />
                   <div id="Tags">
                     {project.tags?.map((tag, index) => (
@@ -167,8 +191,35 @@ function Projects() {
           </div>
         </div>
       </Container>
+      {/* Modal for displaying project details */}
+      <Modal show={showModal} onHide={handleCloseModal} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>{selectedProject?.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <img src={selectedProject?.image} alt={selectedProject?.title} id="Image" />
+          <p id="Date" style={{marginTop: "10px"}}>{selectedProject?.date}</p>
+          <p style={{marginTop: "1rem", marginBottom: "1rem", textAlign: "justify", fontSize: "1.1rem"}}>{selectedProject?.description}</p>
+          <div id="Tags">
+            {selectedProject?.tags.map((tag, index) => (
+              <div id="Tag" key={index}>{tag}</div>
+            ))}
+          </div>
+          <p style={{marginTop: "15px"}}>
+            <a href={selectedProject?.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+            {selectedProject?.webapp && (
+            <p style={{display: "inline", marginLeft: "10px"}}>
+              <a href={selectedProject?.webapp} target="_blank" rel="noopener noreferrer">Live Page</a>
+            </p>
+          )}
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={handleCloseModal}>Close</Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
-}
+} 
 
 export default Projects;
