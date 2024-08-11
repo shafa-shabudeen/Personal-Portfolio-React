@@ -28,7 +28,7 @@ const experiences = [
     img: "HulkHire-logo.png",
     date: "09/2023",
     endDate: "11/2023",
-    skills: ["Core Java", "Advance Java", "APIs", "MicroServices", "Postman", "Trustly Integration"],
+    skills: ["Core Java", "Advance Java", "APIs", "MicroServices", "Postman", "Trustly Integration" ],
     description: [
       "Integrated Trustly Payment Solution into an e-commerce app as part of an intern role, enhancing the payment experience",
       "Used Java technologies like MongoDB and Spring Boot for integration, leading to a 30% increase in conversion rates and a 20% reduction in cart abandonment",
