@@ -34,7 +34,7 @@ This is my personal portfolio website built using React with Vite and styled wit
 
 2. Navigate to the project directory:
    ```bash
-   cd personal-portfolio
+   cd personal-portfolio-react
 
 3. Install dependencies:
    ```bash
